@@ -3,7 +3,7 @@ name = input("What's your name?\n")
 print("You enter a greenhouse through the Northern door, but as soon as you step in you fall asleep. When you wake up, the door is now blocked by a giant, unrecognizable plant. The room you are in is covered in moss, and on the center of the floor is a small beetle.")
 #super cool little beetle dude
 beeta = ("")
-while beeta != "yes" or "Yes":
+while beeta != "Yes:
 	beeta = input("Will you talk to the beetle?\n")
 	if beeta == "yes":
 		print("Beetle?: Hello? Who are you?")
@@ -13,12 +13,12 @@ while beeta != "yes" or "Yes":
 #movement
 move = ("")
 while move != "q":
-	move = input("Where would you like to move? Your options are e, s, or w. Enter q to leave.\n")
-	if move == "e":
+	move = input("Where would you like to move? Your options are E, S, or W. Enter q to leave.\n")
+	if move == "E":
 		print("You have moved East.")
-	elif move == "s":
+	elif move == "S":
 		print("You have moved South.")
-	elif move == "w":
+	elif move == "W":
 		print("You have moved West.")
 	elif move == "q":
 		print("Goodbye!")
