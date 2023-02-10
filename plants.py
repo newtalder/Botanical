@@ -3,7 +3,7 @@ name = input("What's your name?\n")
 print("You enter a greenhouse through the Northern door, but as soon as you step in you fall asleep. When you wake up, the door is now blocked by a giant, unrecognizable plant. The room you are in is covered in moss, and on the center of the floor is a small beetle.")
 #super cool little beetle dude
 beeta = ("")
-while beeta != "Yes:
+while beeta != "Yes":
 	beeta = input("Will you talk to the beetle?\n")
 	if beeta == "yes":
 		print("Beetle?: Hello? Who are you?")
