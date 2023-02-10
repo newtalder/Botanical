@@ -3,12 +3,12 @@ move = ("")
 while move != q:
 	move = input("Where would you like to move? Your options are n, e, s, or w. Enter q to leave.\n")
 	if move == "n":
-		print("You have moved north.")
+		print("You have moved North.")
 	elif move == "e":
-		print("You have moved east.")
+		print("You have moved East.")
 	elif move == "s":
-		print("You have moved south.")
+		print("You have moved South.")
 	elif move == "w":
-		print("You have moved west.")
+		print("You have moved West.")
 	else:
 		print("Sorry, that's not a place to move!")
