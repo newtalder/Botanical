@@ -12,4 +12,4 @@ while move != q:
 	elif move == "w":
 		print("You have moved West.")
 	else:
-		print("Sorry, that's not a place to move!")
+		print("Sorry, that's not a place you can move to!")
