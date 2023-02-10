@@ -5,7 +5,7 @@ print("You enter a greenhouse through the Northern door, but as soon as you step
 beeta = ("")
 while beeta != "Yes":
 	beeta = input("Will you talk to the beetle?\n")
-	if beeta == "yes":
+	if beeta == "Yes":
 		print("Beetle?: Hello? Who are you?")
 		print(f"You: I'm {name}.")
 		print("Beetle?: Yikes, that's a weird name. Well I'm Hercules, cool right?")
