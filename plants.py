@@ -29,6 +29,7 @@ S == 0
 W == 0
 while move != "q":
 	move = input("Mist: Where would you like to move? Your options are E, S, or W. Enter q to leave.\n")
+#East, South, and West options
 	if move == "E":
 		print("You have moved East.")
 		E += 1
