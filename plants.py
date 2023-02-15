@@ -48,7 +48,7 @@ while move != "q":
 		print("You have moved West.")
 		W = W+1
 #The Conifer Room
-	if W == 1:
+		if W == 1:
 			break
 			print("Mist: You have entered the Conifer Room.")
 	elif move == "q":
