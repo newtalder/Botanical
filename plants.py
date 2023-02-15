@@ -32,13 +32,13 @@ while move != "q":
 #East, South, and West options
 	if move == "E":
 		print("You have moved East.")
-		E += 1
+		E = E+1
 	elif move == "S":
 		print("You have moved South.")
-		S += 1
+		S = S+1
 	elif move == "W":
 		print("You have moved West.")
-		W += 1
+		W = W+1
 	elif move == "q":
 		print("Goodbye!")
 	else:
