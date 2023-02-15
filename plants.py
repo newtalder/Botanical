@@ -33,6 +33,9 @@ while move != "q":
 	if move == "E":
 		print("You have moved East.")
 		E = E+1
+		if E == 4:
+			break
+			print("Mist: You have entered the Flower Room.")
 	elif move == "S":
 		print("You have moved South.")
 		S = S+1
@@ -43,6 +46,3 @@ while move != "q":
 		print("Goodbye!")
 	else:
 		print("Sorry, that's not a place you can move to!")
-#The Flower Room
-if E == 4:
-	print("Mist: You have entered the Flower Room.")
