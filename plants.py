@@ -25,7 +25,7 @@ while beeta != "Yes":
 #movement
 move = ("")
 while move != "q":
-	move = input("Where would you like to move? Your options are E, S, or W. Enter q to leave.\n")
+	move = input("Mist: Where would you like to move? Your options are E, S, or W. Enter q to leave.\n")
 	if move == "E":
 		print("You have moved East.")
 	elif move == "S":
