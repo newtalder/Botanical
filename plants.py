@@ -47,6 +47,3 @@ while move != "q":
 		print("Mist: You have entered the Flower Room.")
 	else:
 		print("Sorry, that's not a place you can move to!")
-#The Flower Room
-if E == 4:
-	print("Mist: You have entered the Flower Room.")
