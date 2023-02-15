@@ -41,6 +41,10 @@ while move != "q":
 		W += 1
 	elif move == "q":
 		print("Goodbye!")
+	#The Flower Room
+	elif E == 4:
+		break
+		print("Mist: You have entered the Flower Room.")
 	else:
 		print("Sorry, that's not a place you can move to!")
 #The Flower Room
