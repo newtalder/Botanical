@@ -16,6 +16,7 @@ while beeta != "Yes":
 		elif choose1 == "Yes":
 			print("Hercules: Scary, right?! ")
 		print("Hercules: Wait... I had an idea! Maybe you can help us! If you go into the 3 other rooms, maybe you can find something to stop her. Ask the mist!")
+	#talk to the mist
 		mistchoice = ("")
 		while mistchoice != "Yes":
 			mistchoice = input("Will you speak to the mist? Yes or No:\n")
