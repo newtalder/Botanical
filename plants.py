@@ -10,7 +10,7 @@ while beeta != "Yes":
 		name = input("What's your name?\n")
 		print(f"{name}: I'm {name}.")
 		print("Beetle?: Yikes, that's a weird name. Well I'm Hercules, cool right?")
-		print("Hercules: Anyways, have you seen that giant plant at the door? She won't move and she just so happens to be stealing all of the pollinators! Can you believe that?")
+		print("Hercules: Anyways, have you seen that giant plant at the door? She won't move and she just so happens to be stealing all of the pollinators! It's annoying!")
 		choose1 = input("Yes or No:\n")
 		if choose1 == "No":
 			print("Hercules: Huh, that's weird, she's hard to miss.")
