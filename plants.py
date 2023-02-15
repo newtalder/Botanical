@@ -31,10 +31,13 @@ while move != "q":
 	move = input("Mist: Where would you like to move? Your options are E, S, or W. Enter q to leave.\n")
 	if move == "E":
 		print("You have moved East.")
+		E += 1
 	elif move == "S":
 		print("You have moved South.")
+		S += 1
 	elif move == "W":
 		print("You have moved West.")
+		W += 1
 	elif move == "q":
 		print("Goodbye!")
 	else:
