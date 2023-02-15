@@ -35,22 +35,22 @@ while move != "q":
 		E = E+1
 #The Flower Room
 		if E == 4:
-			break
 			print("Mist: You have entered the Flower Room.")
+			break
 	elif move == "S":
 		print("You have moved South.")
 		S = S+1
 #The Fern Room
 		if S == 2:
-			break
 			print("Mist: You have entered the Fern Room.")
+			break
 	elif move == "W":
 		print("You have moved West.")
 		W = W+1
 #The Conifer Room
 		if W == 1:
-			break
 			print("Mist: You have entered the Conifer Room.")
+			break
 	elif move == "q":
 		print("Goodbye!")
 	else:
