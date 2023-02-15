@@ -24,6 +24,9 @@ while beeta != "Yes":
 				print("You: Um... hi mist...")
 #movement
 move = ("")
+E == 0
+S == 0
+W == 0
 while move != "q":
 	move = input("Mist: Where would you like to move? Your options are E, S, or W. Enter q to leave.\n")
 	if move == "E":
