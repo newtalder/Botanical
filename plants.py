@@ -1,4 +1,3 @@
-name = input("What's your name?\n")
 #introduction
 print("You enter a greenhouse through the Northern door, but as soon as you step in you fall asleep. When you wake up, the door is now blocked by a giant, unrecognizable plant. The room you are in is covered in moss, and on the center of the floor is a small beetle.")
 #super cool little beetle dude
@@ -7,6 +6,7 @@ while beeta != "Yes":
 	beeta = input("Will you talk to the beetle?\n")
 	if beeta == "Yes":
 		print("Beetle?: Hello? Who are you?")
+		name = input("What's your name?\n")
 		print(f"You: I'm {name}.")
 		print("Beetle?: Yikes, that's a weird name. Well I'm Hercules, cool right?")
 		print("Hercules: Anyways, have you seen that giant plant at the door? She won't move and she just so happens to be stealing all of the pollinators! Can you believe that?")
@@ -41,9 +41,5 @@ while move != "q":
 		W += 1
 	elif move == "q":
 		print("Goodbye!")
-	#The Flower Room
-	elif E == 4:
-		break
-		print("Mist: You have entered the Flower Room.")
 	else:
 		print("Sorry, that's not a place you can move to!")
