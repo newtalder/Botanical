@@ -39,10 +39,10 @@ while move != "q":
 			print("Mist: You have entered the Flower Room.")
 #The Orchid
 			choose2 = input("Will you walk forward? Yes or No:\n")
-				if choose2 == "Yes":
-					print("Orchid?: *Growwwllll*")
-					print(f"{name}: Hello? Are you ok?")
-					print("The orchid shakes its sad, droopy head.")
+			if choose2 == "Yes":
+				print("Orchid?: *Growwwllll*")
+				print(f"{name}: Hello? Are you ok?")
+				print("The orchid shakes its sad, droopy head.")
 			break
 	elif move == "S":
 		print("You have moved South.")
