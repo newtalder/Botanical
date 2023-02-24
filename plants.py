@@ -65,6 +65,8 @@ while move != "q":
 				print("Pine Tree?: ....hi")
 				print(f"{name}: Hey, is everything ok?")
 				print("Pine Tree?: Just lonely is all")
+			elif choose4 == "No":
+				turn3 = input(f"Would you like to turn back? Yes or No:\n")
 			break
 	elif move == "q":
 		print("Goodbye!")
