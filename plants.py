@@ -50,6 +50,9 @@ while move != "q":
 #The Fern Room
 		if S == 2:
 			print("Mist: You have entered the Fern Room.")
+			choose3 = input("Will you walk forward? Yes or No:\n")
+			if choose3 == "Yes":
+				print("You see a ferm that is so full that it sags, it does not turn to look at you. Maybe lighten it's load?")
 			break
 	elif move == "W":
 		print("You have moved West.")
@@ -57,6 +60,11 @@ while move != "q":
 #The Conifer Room
 		if W == 1:
 			print("Mist: You have entered the Conifer Room.")
+			choose4 = input("Will you walk forward? Yes or No:\n")
+			if choose4 == "Yes":
+				print("Pine Tree?: ....hi")
+				print(f"{name}: Hey, is everything ok?")
+				print("Pine Tree?: Just lonely is all")
 			break
 	elif move == "q":
 		print("Goodbye!")
