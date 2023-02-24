@@ -43,6 +43,8 @@ while move != "q":
 				print("Orchid?: *Growwwllll*")
 				print(f"{name}: Hello? Are you ok?")
 				print("The orchid shakes its sad, droopy head.")
+			elif choose2 == "No":
+				turn1 = input(f"Would you like to turn back? Yes or No:\n")
 			break
 	elif move == "S":
 		print("You have moved South.")
@@ -53,6 +55,8 @@ while move != "q":
 			choose3 = input("Will you walk forward? Yes or No:\n")
 			if choose3 == "Yes":
 				print("You see a ferm that is so full that it sags, it does not turn to look at you. Maybe lighten it's load?")
+			elif choose3 == "No":
+				turn2 = input(f"Would you like to turn back? Yes or No:\n")
 			break
 	elif move == "W":
 		print("You have moved West.")
