@@ -22,7 +22,7 @@ while beeta != "Yes":
 		while mistchoice != "Yes":
 			mistchoice = input("Will you speak to the mist? Yes or No:\n")
 			if mistchoice == "Yes":
-				print(f"{name}: Um... hi mist...")
+				print(f"{name}: Um... hey mist...")
 #movement
 move = ("")
 E = 0
