@@ -10,19 +10,19 @@ while beeta != "Yes":
 		name = input("What's your name?\n")
 		print(f"{name}: I'm {name}.")
 		print("Beetle?: Yikes, that's a weird name. Well I'm Hercules, cool right?")
-		print("Hercules: Anyways, have you seen that giant plant at the door? She won't move and she just so happens to be stealing all of the pollinators! It's annoying!")
+		print("Hercules: Anyways, have you seen that giant plant at the door? She won't move and she just so happens to be blocking the sunlight! It's annoying!")
 		choose1 = input("Yes or No:\n")
 		if choose1 == "No":
 			print("Hercules: Huh, that's weird, she's hard to miss.")
 		elif choose1 == "Yes":
 			print("Hercules: Scary, right?! ")
-		print("Hercules: Wait... I had an idea! Maybe you can help us! If you go into the 3 other rooms, maybe you can find something to stop her. Ask the mist!")
+		print("Hercules: Wait... I had an idea! Maybe you can help us! If you go look around, maybe you can find something to stop her. Ask the mist!")
 #talk to the mist
 		mistchoice = ("")
 		while mistchoice != "Yes":
 			mistchoice = input("Will you speak to the mist? Yes or No:\n")
 			if mistchoice == "Yes":
-				print(f"{name}: Um... hey mist...")
+				print(f"{name}: Um... hey...?")
 #movement
 move = ("")
 E = 0
