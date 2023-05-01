@@ -40,10 +40,10 @@ while move != "q":
 			print("Mist: You have entered the Flower Room.")
 #The Orchid
 			choose2 = input("Will you walk forward? Yes or No:\n")
-			if choose2 == "Yes":
+			if choose2 in ("Yes", "Y", "y", "yes"):
 				with open("plants.py", "r") as file:
 					print(file.read())
-			elif choose2 == "No":
+			elif choose2 in ("No", "N", "no", "n"):
 				turn1 = input(f"Would you like to turn back? Yes or No:\n")
 			break
 	elif move == "S":
@@ -54,9 +54,9 @@ while move != "q":
 			print("Mist: You have entered the Fern Room.")
 #The Fern
 			choose3 = input("Will you walk forward? Yes or No:\n")
-			if choose3 == "Yes":
+			if choose3 in ("Yes", "Y", "y", "yes"):
 				print("You see a fern that is so full that it sags, it does not turn to look at you. Maybe lighten it's load?")
-			elif choose3 == "No":
+			elif choose3 in ("No", "N", "no", "n"):
 				turn2 = input(f"Would you like to turn back? Yes or No:\n")
 			break
 	elif move == "W":
@@ -67,11 +67,11 @@ while move != "q":
 			print("Mist: You have entered the Conifer Room.")
 #The Pine Tree
 			choose4 = input("Will you walk forward? Yes or No:\n")
-			if choose4 == "Yes":
+			if choose4 in ("Yes", "Y", "y", "yes"):
 				print("Pine Tree?: ....hi")
 				print(f"{name}: Hey, is everything ok?")
 				print("Pine Tree?: Just lonely is all")
-			elif choose4 == "No":
+			elif choose4 in ("No", "N", "no", "n"):
 				turn3 = input(f"Would you like to turn back? Yes or No:\n")
 			break
 	elif move == "q":
