@@ -72,9 +72,8 @@ while move != "q":
 #The Pine Tree
 			choose4 = input("Will you walk forward? Yes or No:\n")
 			if choose4 in ("Yes", "Y", "y", "yes"):
-				print("Pine Tree?: ....hi")
-				print(f"{name}: Hey, is everything ok?")
-				print("Pine Tree?: Just lonely is all")
+				with open("conifer.py", "r") as file:
+					print(file.read())
 			elif choose4 in ("No", "N", "no", "n"):
 				turn3 = input(f"Would you like to turn back? Yes or No:\n")
 			break
