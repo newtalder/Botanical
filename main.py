@@ -1,5 +1,5 @@
 #introduction
-import savenload, flower, fern, conifer
+import savenload
 print("BOTANICAL")
 print("You enter an old, almost abandonded greenhouse through its Northern entrance, but as soon as you step in, you pass out. When you wake up, the door is now blocked by a giant plant. The room you are in is covered in moss, and on the center of the floor is a small beetle.")
 #super cool little beetle dude
@@ -41,6 +41,7 @@ while move != "q":
 #The Orchid
 			choose2 = input("Will you walk forward? Yes or No:\n")
 			if choose2 in ("Yes", "Y", "y", "yes"):
+				import flower
 				from flower import orchid
 				orchid.talk()
 			elif choose2 in ("No", "N", "no", "n"):
@@ -55,6 +56,7 @@ while move != "q":
 #The Fern
 			choose3 = input("Will you walk forward? Yes or No:\n")
 			if choose3 in ("Yes", "Y", "y", "yes"):
+				import fern
 				with open("fern.py", "r") as file:
 					print(file.read())
 			elif choose3 in ("No", "N", "no", "n"):
@@ -69,6 +71,7 @@ while move != "q":
 #The Pine Tree
 			choose4 = input("Will you walk forward? Yes or No:\n")
 			if choose4 in ("Yes", "Y", "y", "yes"):
+				import conifer
 				with open("conifer.py", "r") as file:
 					print(file.read())
 			elif choose4 in ("No", "N", "no", "n"):
