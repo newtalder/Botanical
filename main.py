@@ -58,7 +58,7 @@ while move != "q":
 			if choose3 in ("Yes", "Y", "y", "yes"):
 				import fern
 				from fern import ferny
-				orchid.talk()
+				ferny.talk()
 			elif choose3 in ("No", "N", "no", "n"):
 				turn2 = input(f"Would you like to turn back? Yes or No:\n")
 			break
@@ -72,8 +72,8 @@ while move != "q":
 			choose4 = input("Will you walk forward? Yes or No:\n")
 			if choose4 in ("Yes", "Y", "y", "yes"):
 				import conifer
-				with open("conifer.py", "r") as file:
-					print(file.read())
+				from conifer import pine
+				pine.talk()
 			elif choose4 in ("No", "N", "no", "n"):
 				turn3 = input(f"Would you like to turn back? Yes or No:\n")
 			break
