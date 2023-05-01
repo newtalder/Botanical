@@ -13,7 +13,7 @@ while beeta not in ("Yes", "Y", "y", "yes"):
 		print("Beetle?: Yikes, that's a weird name. Well I'm Hercules, cool right?")
 		print("Hercules: Anyways, have you seen that giant plant at the door? She won't move and she just so happens to be blocking the sunlight! It's annoying!")
 		choose1 = input("Yes or No:\n")
-		if choose1 in "No":
+		if choose1 in ("No", "N", "no", "n"):
 			print("Hercules: Huh, that's weird, she's hard to miss.")
 		elif choose1 in ("Yes", "Y", "y", "yes"):
 			print("Hercules: Scary, right?! ")
