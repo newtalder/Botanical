@@ -57,8 +57,8 @@ while move != "q":
 			choose3 = input("Will you walk forward? Yes or No:\n")
 			if choose3 in ("Yes", "Y", "y", "yes"):
 				import fern
-				with open("fern.py", "r") as file:
-					print(file.read())
+				from fern import ferny
+				orchid.talk()
 			elif choose3 in ("No", "N", "no", "n"):
 				turn2 = input(f"Would you like to turn back? Yes or No:\n")
 			break
