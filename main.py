@@ -1,8 +1,5 @@
 #introduction
-import savenload
-import flower
-import fern
-import conifer
+import savenload, flower, fern, conifer
 print("BOTANICAL")
 print("You enter an old, almost abandonded greenhouse through its Northern entrance, but as soon as you step in, you pass out. When you wake up, the door is now blocked by a giant plant. The room you are in is covered in moss, and on the center of the floor is a small beetle.")
 #super cool little beetle dude
