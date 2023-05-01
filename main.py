@@ -41,7 +41,7 @@ while move != "q":
 #The Orchid
 			choose2 = input("Will you walk forward? Yes or No:\n")
 			if choose2 in ("Yes", "Y", "y", "yes"):
-				orchid.talk
+				orchid.talk()
 			elif choose2 in ("No", "N", "no", "n"):
 				turn1 = input(f"Would you like to turn back? Yes or No:\n")
 			break
