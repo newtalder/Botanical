@@ -1,5 +1,4 @@
-import main
 class Flower():
     def talk(self):
-        print(f"Orchid?: *Growwwllll*\n{name}: Hello? Are you ok?\nThe orchid shakes its sad, droopy head.")
+        print(f"Orchid?: *Growwwllll*\nYou give a thumbs up, almost as to ask if it's ok.\nThe orchid shakes its sad, droopy head.")
 orchid = Flower()
