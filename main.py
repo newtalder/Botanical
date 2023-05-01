@@ -58,7 +58,8 @@ while move != "q":
 #The Fern
 			choose3 = input("Will you walk forward? Yes or No:\n")
 			if choose3 in ("Yes", "Y", "y", "yes"):
-				print("You see a fern that is so full that it sags, it does not turn to look at you. Maybe lighten it's load?")
+				with open("fern.py", "r") as file:
+					print(file.read())
 			elif choose3 in ("No", "N", "no", "n"):
 				turn2 = input(f"Would you like to turn back? Yes or No:\n")
 			break
