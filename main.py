@@ -6,7 +6,7 @@ print("You enter an old, almost abandonded greenhouse through its Northern entra
 beeta = ("")
 while beeta != ("Yes", "Y", "y", "yes"):
 	beeta = input("Will you talk to the beetle?\n")
-	if beeta == "Yes":
+	if beeta ==  ("Yes", "Y", "y", "yes"):
 		print("Beetle?: Hello? Who are you?")
 		name = input("What's your name?\n")
 		print(f"{name}: I'm {name}.")
@@ -15,14 +15,14 @@ while beeta != ("Yes", "Y", "y", "yes"):
 		choose1 = input("Yes or No:\n")
 		if choose1 == "No":
 			print("Hercules: Huh, that's weird, she's hard to miss.")
-		elif choose1 == "Yes":
+		elif choose1 ==  ("Yes", "Y", "y", "yes"):
 			print("Hercules: Scary, right?! ")
 		print("Hercules: Wait... I had an idea! Maybe you can help us! If you go look around, maybe you can find something to stop her. Ask the mist!")
 #talk to the mist
 mistchoice = ("")
-while mistchoice != "Yes":
+while mistchoice !=  ("Yes", "Y", "y", "yes"):
 	mistchoice = input("Will you speak to the mist? Yes or No:\n")
-	if mistchoice == "Yes":
+	if mistchoice ==  ("Yes", "Y", "y", "yes"):
 		print(f"{name}: Um... hey...?")
 #movement
 move = ("")
