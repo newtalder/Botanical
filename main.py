@@ -1,5 +1,8 @@
 #introduction
-import plants
+import savenload
+import flower
+import fern
+import conifer
 print("BOTANICAL")
 print("You enter an old, almost abandonded greenhouse through its Northern entrance, but as soon as you step in, you pass out. When you wake up, the door is now blocked by a giant plant. The room you are in is covered in moss, and on the center of the floor is a small beetle.")
 #super cool little beetle dude
@@ -41,7 +44,7 @@ while move != "q":
 #The Orchid
 			choose2 = input("Will you walk forward? Yes or No:\n")
 			if choose2 in ("Yes", "Y", "y", "yes"):
-				with open("plants.py", "r") as file:
+				with open("flower.py", "r") as file:
 					print(file.read())
 			elif choose2 in ("No", "N", "no", "n"):
 				turn1 = input(f"Would you like to turn back? Yes or No:\n")
