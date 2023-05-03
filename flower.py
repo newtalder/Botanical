@@ -22,10 +22,9 @@ class Flower():
             print(f"Your inventory:\n{self.inventory}")
             pick = input("What item would you like to 'use'? ").lower()
             if pick in self.inventory:
-                if pick in self.room_items:
-                    print(self.room_items[pick])
+                print(self.inventory[pick])
                     self.inventory.remove(pick)
-                    del self.room_items[pick]
+                    del self.inventory[pick]
                     self.special(pick)
                 else:
                     print(f"You can't use {pick} here.")
