@@ -45,6 +45,7 @@ while move != "q":
 				from flower import orchid
 				orchid.talk()
 				orchid.get_item()
+				orchid.use_item()
 			elif choose2 in ("No", "N", "no", "n"):
 				turn1 = input(f"Would you like to turn back? Yes or No:\n")
 			break
