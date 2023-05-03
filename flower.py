@@ -1,6 +1,8 @@
 class Flower():
     def __init__(self):
         self.room_items = ["watering can"]
+        self.player = {name}
+        self.inventory = []
     def talk(self):
         print(f"Orchid?: *Growwwllll*\nYou give a thumbs up, almost as to ask if it's ok.\nThe orchid shakes its sad, droopy head.")
     def get_item(self, player):
