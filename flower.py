@@ -1,7 +1,7 @@
 class Flower():
     def __init__(self):
         self.room_items = ["watering can"]
-        self.usable_items = {watering can}
+        self.usable_items = {1: "watering can"}
         self.inventory = []
     def talk(self):
         print(f"Orchid?: *Growwwllll*\nYou give a thumbs up, almost as to ask if it's ok.\nThe orchid shakes its sad, droopy head.")
