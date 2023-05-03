@@ -18,6 +18,7 @@ class Flower():
             print("There's nothing to pickup here!")
     def use_item(self):
 		flowechoic = input("Would you like to use something from your inventory to help the orchid?\n")
+        if flowechoic in ("Yes", "Y", "y", "yes"):
 			print(f"Your inventory:\n{player.inventory}")
 			pick = input("What item would you like to 'use'? ").lower()
 			if pick in player.inventory:
