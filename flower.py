@@ -17,20 +17,20 @@ class Flower():
         else:
             print("There's nothing to pickup here!")
     def use_item(self):
-		flowechoic = input("Would you like to use something from your inventory to help the orchid?\n")
+        flowechoic = input("Would you like to use something from your inventory to help the orchid?\n")
         if flowechoic in ("Yes", "Y", "y", "yes"):
-			print(f"Your inventory:\n{player.inventory}")
-			pick = input("What item would you like to 'use'? ").lower()
-			if pick in player.inventory:
-				if pick in self.usable_items:
-					print(self.useable_items[pick])
-					player.inventory.remove(pick)
-					del self.usable_items[pick]
-					self.special(pick)
-				else:
-					print(f"You can't use {pick} here.")
-			else:
-				print(f"You don't have {pick} in your inventory.")
-		else:
-			print("You don't have anything in your inventory to 'use'!")
+            print(f"Your inventory:\n{player.inventory}")
+            pick = input("What item would you like to 'use'? ").lower()
+            if pick in player.inventory:
+                if pick in self.usable_items:
+                    print(self.useable_items[pick])
+                    player.inventory.remove(pick)
+                    del self.usable_items[pick]
+                    self.special(pick)
+                else:
+                    print(f"You can't use {pick} here.")
+            else:
+                print(f"You don't have {pick} in your inventory.")
+        else:
+            print("You don't have anything in your inventory to 'use'!")
 orchid = Flower()
