@@ -7,7 +7,7 @@ class Flower():
     def get_item(self):
         flowchoi = input("You look around the room to see dead flowers of all kinds, all dried up. In the left corner of the room, there lies a watering can, would you like to pick it up?\n")
         if flowchoi in ("Yes", "Y", "y", "yes"):
-            pick = input("What item would you like to 'get'?").lower()
+            pick = input("What item would you like to 'get'?\n").lower()
             if pick in self.room_items:
                 print(f"You pickup the {pick}.")
                 self.inventory.append(pick)
