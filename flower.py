@@ -1,7 +1,6 @@
 class Flower():
     def __init__(self):
         self.room_items = ["watering can"]
-        self.player = {name}
         self.inventory = []
     def talk(self):
         print(f"Orchid?: *Growwwllll*\nYou give a thumbs up, almost as to ask if it's ok.\nThe orchid shakes its sad, droopy head.")
@@ -11,7 +10,7 @@ class Flower():
             pick = input("What item would you like to 'get'?").lower()
             if pick in self.room_items:
                 print(f"You pickup the {pick}.")
-                player.inventory.append(pick)
+                self.inventory.append(pick)
                 self.room_items.remove(pick)
             else:
                 print(f"Couldn't find {pick} in room.")
