@@ -21,11 +21,11 @@ class Flower():
         if flowechoic in ("Yes", "Y", "y", "yes"):
             print(f"Your inventory:\n{self.inventory}")
             pick = input("What item would you like to 'use'? ").lower()
-            if pick inself.inventory:
-                if pick in self.usable_items:
-                    print(self.useable_items[pick])
-                self.inventory.remove(pick)
-                    del self.usable_items[pick]
+            if pick in self.inventory:
+                if pick in self.room_items:
+                    print(self.room_items[pick])
+                    self.inventory.remove(pick)
+                    del self.room_items[pick]
                     self.special(pick)
                 else:
                     print(f"You can't use {pick} here.")
