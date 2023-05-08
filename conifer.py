@@ -1,5 +1,6 @@
 class Conifer():
-    self.room_items = ["pinecone"]
+    def __init__(self):
+        self.room_items = ["pinecone"]
         self.usable_items = {"pinecone"}
         self.inventory = []
     def talk(self):
