@@ -1,7 +1,7 @@
 class Flower():
     def __init__(self):
         self.room_items = ["watering can"]
-        self.usable_items = {1: "watering can"}
+        self.usable_items = {"watering can"}
         self.inventory = []
     def talk(self):
         print(f"Orchid?: *Growwwllll*\nYou give a thumbs up, almost as to ask if it's ok.\nThe orchid shakes its sad, droopy head.")
@@ -23,11 +23,14 @@ class Flower():
             if self.inventory:
                 print(f"Your inventory:\n{self.inventory}")
                 pick = input("What item would you like to 'use'? ").lower()
-                if pick in self.usable_items:
-                    print(self.usable_items[pick])
-                    self.inventory.remove(pick)
-                    del self.usable_items[pick]
-                    self.special(pick)
+                if pick in self.inventory:
+                    if pick in self.usable_items:
+                        print(self.usable_items(pick))
+                        self.inventory.remove(pick)
+                        del self.usable_items(pick)
+                        self.special(pick)
+                    else:
+                        print(f"you can't use {pick} here.")
                 else:
                     print(f"You don't have {pick} in your inventory.")
             else:
