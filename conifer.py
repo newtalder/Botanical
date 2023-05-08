@@ -27,7 +27,7 @@ class Conifer():
                     print("You used the", pick)
                     self.inventory.remove(pick)
                     self.usable_items.remove(pick)
-                    print("The pinecone snuggles up close to the pine cone, and you see them embrace each other. The pine tree is now willing to help with the final plant.")
+                    print("The pinecone snuggles up close to the pine tree, and you see them embrace each other. The pine tree is now willing to help with the final plant.")
                 else:
                     print(f"You don't have {pick} in your inventory.")
             else:
