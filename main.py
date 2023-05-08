@@ -61,6 +61,8 @@ while move != "q":
 				import fern
 				from fern import ferny
 				ferny.talk()
+				ferny.get_item()
+				ferny.use_item()
 			elif choose3 in ("No", "N", "no", "n"):
 				turn2 = input(f"Would you like to turn back? Yes or No:\n")
 			break
@@ -76,6 +78,8 @@ while move != "q":
 				import conifer
 				from conifer import pine
 				pine.talk()
+				pine.get_item()
+				pine.use_item()
 			elif choose4 in ("No", "N", "no", "n"):
 				turn3 = input(f"Would you like to turn back? Yes or No:\n")
 			break
