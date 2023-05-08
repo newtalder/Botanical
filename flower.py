@@ -27,9 +27,9 @@ class Flower():
                     print("You used the", pick)
                     self.inventory.remove(pick)
                     self.usable_items.remove(pick)
+                    print("The orchid props up, plump and vibrant. It gives out a squeak of joy, and nods in approval. The orchid is now willing to help with the final plant.")
                 else:
                     print(f"You don't have {pick} in your inventory.")
             else:
                 print("You don't have anything in your inventory to 'use'!")
-            print("The orchid props up, plump and vibrant. It gives out a squeak of joy, and nods in approval. The orchid is now willing to help with the final plant.")
 orchid = Flower()
