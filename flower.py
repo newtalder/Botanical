@@ -23,16 +23,13 @@ class Flower():
             if self.inventory:
                 print(f"Your inventory:\n{self.inventory}")
                 pick = input("What item would you like to 'use'? ").lower()
-                if pick in self.inventory:
-                    if pick in self.usable_items:
-                        print(self.usable_items(pick))
-                        self.inventory.remove(pick)
-                        del self.usable_items(pick)
-                        self.special(pick)
-                    else:
-                        print(f"you can't use {pick} here.")
+                if pick in self.usable_items:
+                    print("You used the", pick)
+                    self.inventory.remove(pick)
+                    self.usable_items.remove(pick)
                 else:
                     print(f"You don't have {pick} in your inventory.")
             else:
                 print("You don't have anything in your inventory to 'use'!")
+            print("The orchid props up, plump and vibrant. It gives out a squeak of joy, and nods in approval. The orchid is now willing to help with the final plant.")
 orchid = Flower()
