@@ -37,6 +37,10 @@ def load():
 			Flower = pickle.load(f)
 			Fern = pickle.load(f)
 			Conifer = pickle.load(f)
+			print("Your game has been loaded!")
+	except FileNotFoundError:
+		print("This game file was not found!")
+
 mistchoice = ("")
 while mistchoice not in ("Yes", "Y", "y", "yes"):
 	mistchoice = input("Will you speak to the mist? Yes or No:\n")
