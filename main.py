@@ -70,12 +70,15 @@ while move != "q" and finalflower != 3:
 				orchid.talk()
 				orchid.get_item()
 				orchid.use_item()
+				completion1 = completion1+1
 				finalflower = finalflower+1
 				continue
 			elif choose2 in ("No", "N", "no", "n"):
 				turn1 = input(f"Would you like to turn back? Yes or No:\n")
 				if turn1 in ("No", "N", "no", "n"):
 					continue
+		elif completion1 == 1:
+			print("You've already finished this room!")
 	elif move == "S":
 		print("You have moved South.")
 		S = S+1
@@ -88,6 +91,7 @@ while move != "q" and finalflower != 3:
 				ferny.talk()
 				ferny.get_item()
 				ferny.use_item()
+				completion2 = completion2+1
 				finalflower = finalflower+1
 				continue
 			elif choose3 in ("No", "N", "no", "n"):
@@ -106,6 +110,7 @@ while move != "q" and finalflower != 3:
 				pine.talk()
 				pine.get_item()
 				pine.use_item()
+				completion3 = completion3+1
 				finalflower = finalflower+1
 				continue
 			elif choose4 in ("No", "N", "no", "n"):
