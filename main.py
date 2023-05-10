@@ -79,6 +79,7 @@ while move != "q" and finalflower != 3:
 					continue
 		elif completion1 == 1:
 			print("You've already finished this room!")
+			continue
 	elif move == "S":
 		print("You have moved South.")
 		S = S+1
@@ -98,6 +99,9 @@ while move != "q" and finalflower != 3:
 				turn2 = input(f"Would you like to turn back? Yes or No:\n")
 				if turn2 in ("No", "N", "no", "n"):
 					continue
+		elif completion2 == 1:
+			print("You've already finished this room!")
+			continue
 	elif move == "W":
 		print("You have moved West.")
 		W = W+1
@@ -117,6 +121,9 @@ while move != "q" and finalflower != 3:
 				turn3 = input(f"Would you like to turn back? Yes or No:\n")
 				if turn3 in ("No", "N", "no", "n"):
 					continue
+		elif completion3 == 1:
+			print("You've already finished this room!")
+			continue
 	elif move == "q":
 		print("Goodbye!")
 	elif move == "s":
