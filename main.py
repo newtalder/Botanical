@@ -47,6 +47,7 @@ while mistchoice not in ("Yes", "Y", "y", "yes"):
 	if mistchoice in ("Yes", "Y", "y", "yes"):
 		print(f"{name}: Um... hey...?")
 #movement
+finalflower = 0
 move = ("")
 E = 0
 S = 0
@@ -66,8 +67,12 @@ while move != "q":
 				orchid.talk()
 				orchid.get_item()
 				orchid.use_item()
+				finalflower = finalflower+1
+				continue
 			elif choose2 in ("No", "N", "no", "n"):
 				turn1 = input(f"Would you like to turn back? Yes or No:\n")
+				if turn1 in ("No", "N", "no", "n"):
+					continue
 	elif move == "S":
 		print("You have moved South.")
 		S = S+1
@@ -80,6 +85,7 @@ while move != "q":
 				ferny.talk()
 				ferny.get_item()
 				ferny.use_item()
+				finalflower = finalflower+1
 				continue
 			elif choose3 in ("No", "N", "no", "n"):
 				turn2 = input(f"Would you like to turn back? Yes or No:\n")
@@ -97,8 +103,12 @@ while move != "q":
 				pine.talk()
 				pine.get_item()
 				pine.use_item()
+				finalflower = finalflower+1
+				continue
 			elif choose4 in ("No", "N", "no", "n"):
 				turn3 = input(f"Would you like to turn back? Yes or No:\n")
+				if turn3 in ("No", "N", "no", "n"):
+					continue
 	elif move == "q":
 		print("Goodbye!")
 	elif move == "s":
