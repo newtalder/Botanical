@@ -48,6 +48,9 @@ while mistchoice not in ("Yes", "Y", "y", "yes"):
 		print(f"{name}: Um... hey...?")
 #movement
 finalflower = 0
+completion1 = 0
+completion2 = 0
+completion3 = 0
 move = ("")
 E = 0
 S = 0
@@ -59,7 +62,7 @@ while move != "q" and finalflower != 3:
 		print("You have moved East.")
 		E = E+1
 #The Flower Room
-		if E == 4:
+		if E == 4 and if completion1 == 0:
 			print("Mist: You have entered the Flower Room.")
 #The Orchid
 			choose2 = input("Will you walk forward? Yes or No:\n")
@@ -77,7 +80,7 @@ while move != "q" and finalflower != 3:
 		print("You have moved South.")
 		S = S+1
 #The Fern Room
-		if S == 2:
+		if S == 2 and if completion2 == 0:
 			print("Mist: You have entered the Fern Room.")
 #The Fern
 			choose3 = input("Will you walk forward? Yes or No:\n")
@@ -95,7 +98,7 @@ while move != "q" and finalflower != 3:
 		print("You have moved West.")
 		W = W+1
 #The Conifer Room
-		if W == 1:
+		if W == 1 and if completion3 == 0:
 			print("Mist: You have entered the Conifer Room.")
 #The Pine Tree
 			choose4 = input("Will you walk forward? Yes or No:\n")
