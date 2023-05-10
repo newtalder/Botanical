@@ -80,8 +80,11 @@ while move != "q":
 				ferny.talk()
 				ferny.get_item()
 				ferny.use_item()
+				continue
 			elif choose3 in ("No", "N", "no", "n"):
 				turn2 = input(f"Would you like to turn back? Yes or No:\n")
+				if turn2 in ("No", "N", "no", "n"):
+					continue
 	elif move == "W":
 		print("You have moved West.")
 		W = W+1
