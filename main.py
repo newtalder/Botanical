@@ -144,4 +144,4 @@ if finalflower == 3:
 			print(f"{name}: What's wrong? Is everything alright?\n")
 			print("The plant lets out a horrific shriek, which concerns you even more.\n")
 			speakopt = ("")
-			speakopt = input("What will you say to the plant?\nOPTIONS:\n*Ask the plant if it's lonely\n*Ask the plant if it's hurt\n*Ask the plant if it's hungry\n")
+			speakopt = input("What will you say to the plant?\nOPTIONS:\n1: Ask the plant if it's lonely\n2: Ask the plant if it's hurt\n3: Ask the plant if it's hungry\n")
