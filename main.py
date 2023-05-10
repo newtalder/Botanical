@@ -1,5 +1,8 @@
 #introduction
 import savenload
+import flower
+import fern
+import conifer
 print("BOTANICAL")
 print("You enter an old, almost abandonded greenhouse through its Northern entrance, but as soon as you step in, you pass out. When you wake up, the door is now blocked by a giant plant. The room you are in is covered in moss, and on the center of the floor is a small beetle.")
 #super cool little beetle dude
@@ -19,6 +22,11 @@ while beeta not in ("Yes", "Y", "y", "yes"):
 			print("Hercules: Scary, right?! ")
 		print("Hercules: Wait... I had an idea! Maybe you can help us! If you go look around, maybe you can find something to stop her. Ask the mist!")
 #talk to the mist
+def save():
+	with open("savenload", "wb") as f:
+		pickle.dump(Flower, f)
+		pickle.dump(Fern, f)
+		pickle.dump(Conifer, f)
 mistchoice = ("")
 while mistchoice not in ("Yes", "Y", "y", "yes"):
 	mistchoice = input("Will you speak to the mist? Yes or No:\n")
@@ -41,14 +49,12 @@ while move != "q":
 #The Orchid
 			choose2 = input("Will you walk forward? Yes or No:\n")
 			if choose2 in ("Yes", "Y", "y", "yes"):
-				import flower
 				from flower import orchid
 				orchid.talk()
 				orchid.get_item()
 				orchid.use_item()
 			elif choose2 in ("No", "N", "no", "n"):
 				turn1 = input(f"Would you like to turn back? Yes or No:\n")
-			break
 	elif move == "S":
 		print("You have moved South.")
 		S = S+1
@@ -58,14 +64,12 @@ while move != "q":
 #The Fern
 			choose3 = input("Will you walk forward? Yes or No:\n")
 			if choose3 in ("Yes", "Y", "y", "yes"):
-				import fern
 				from fern import ferny
 				ferny.talk()
 				ferny.get_item()
 				ferny.use_item()
 			elif choose3 in ("No", "N", "no", "n"):
 				turn2 = input(f"Would you like to turn back? Yes or No:\n")
-			break
 	elif move == "W":
 		print("You have moved West.")
 		W = W+1
@@ -75,14 +79,12 @@ while move != "q":
 #The Pine Tree
 			choose4 = input("Will you walk forward? Yes or No:\n")
 			if choose4 in ("Yes", "Y", "y", "yes"):
-				import conifer
 				from conifer import pine
 				pine.talk()
 				pine.get_item()
 				pine.use_item()
 			elif choose4 in ("No", "N", "no", "n"):
 				turn3 = input(f"Would you like to turn back? Yes or No:\n")
-			break
 	elif move == "q":
 		print("Goodbye!")
 	else:
