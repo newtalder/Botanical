@@ -52,7 +52,7 @@ move = ("")
 E = 0
 S = 0
 W = 0
-while move != "q":
+while move != "q" and finalflower != 3:
 	move = input("Mist: Where would you like to move? Your options are E, S, or W. Enter q to leave. You may also save or load using s or l.\n")
 #East, South, and West options
 	if move == "E":
@@ -104,12 +104,7 @@ while move != "q":
 				pine.get_item()
 				pine.use_item()
 				finalflower = finalflower+1
-				leave = ("")
-				leave = input("If you are confident you have helped the three plants, would you like to go back to the main room?:\n")
-				if leave in ("Yes", "Y", "y", "yes"):
-					break
-				elif leave in ("No", "N", "no", "n"):
-					continue
+				continue
 			elif choose4 in ("No", "N", "no", "n"):
 				turn3 = input(f"Would you like to turn back? Yes or No:\n")
 				if turn3 in ("No", "N", "no", "n"):
