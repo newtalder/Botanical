@@ -62,7 +62,7 @@ while move != "q" and finalflower != 3:
 		print("You have moved East.")
 		E = E+1
 #The Flower Room
-		if E == 4 and if completion1 == 0:
+		if E == 4 and completion1 == 0:
 			print("Mist: You have entered the Flower Room.")
 #The Orchid
 			choose2 = input("Will you walk forward? Yes or No:\n")
@@ -84,7 +84,7 @@ while move != "q" and finalflower != 3:
 		print("You have moved South.")
 		S = S+1
 #The Fern Room
-		if S == 2 and if completion2 == 0:
+		if S == 2 and completion2 == 0:
 			print("Mist: You have entered the Fern Room.")
 #The Fern
 			choose3 = input("Will you walk forward? Yes or No:\n")
@@ -106,7 +106,7 @@ while move != "q" and finalflower != 3:
 		print("You have moved West.")
 		W = W+1
 #The Conifer Room
-		if W == 1 and if completion3 == 0:
+		if W == 1 and completion3 == 0:
 			print("Mist: You have entered the Conifer Room.")
 #The Pine Tree
 			choose4 = input("Will you walk forward? Yes or No:\n")
