@@ -27,6 +27,16 @@ def save():
 		pickle.dump(Flower, f)
 		pickle.dump(Fern, f)
 		pickle.dump(Conifer, f)
+		print("Your game has been saved!")
+def load():
+	global Flower
+	global Fern
+	global Conifer
+	try:
+		with open("savenload", "rb") as f:
+			Flower = pickle.load(f)
+			Fern = pickle.load(f)
+			Conifer = pickle.load(f)
 mistchoice = ("")
 while mistchoice not in ("Yes", "Y", "y", "yes"):
 	mistchoice = input("Will you speak to the mist? Yes or No:\n")
