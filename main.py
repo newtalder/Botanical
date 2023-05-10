@@ -117,3 +117,15 @@ while move != "q":
 		load()
 	else:
 		print("Sorry, that's not a place you can move to!")
+if finalflower = 3:
+	finalchoice = ("")
+	while finalchoice not in ("Yes", "Y", "y", "yes"):
+		finalchoice = input("Will you head back to the front door to try and escape? Yes or No:\n")
+		if finalchoice in ("Yes", "Y", "y", "yes"):
+			print("You walk out into the main area of the greenhouse, and Hercules is nowhere to be found. The large plant stands menacingly in front of the door, its jaws open wide.")
+			finalchoice2 = ("")
+			while finalchoice2 not in ("Yes", "Y", "y", "yes"):
+				finalchoice2 = input("Are you ready to confront the plant? Yes or No:\n")
+				if finalchoice2 in ("Yes", "Y", "y", "yes"):
+					print("You walk up to the plant, trying to look as friendly as possible. One of its many mouths reaches out and snaps at you.\n")
+					print(f"{name}: Hey, do you mind moving...?")
