@@ -15,7 +15,7 @@ while beeta not in ("Yes", "Y", "y", "yes"):
 		name = input("What's your name?\n")
 		print(f"{name}: I'm {name}.")
 		print("Beetle?: Yikes, that's a weird name. Well I'm Hercules, cool right?")
-		print("Hercules: Anyways, have you seen that giant plant at the door? She won't move and she just so happens to be blocking the sunlight! It's annoying!")
+		print("Hercules: Anyways, have you seen that giant plant at the door? She won't move and she just so happens to be stopping our helpers from coming in! It's annoying!")
 		choose1 = input("Yes or No:\n")
 		if choose1 in ("No", "N", "no", "n"):
 			print("Hercules: Huh, that's weird, she's hard to miss.")
@@ -139,4 +139,7 @@ if finalflower == 3:
 		finalchoice = input("Are you ready to confront the plant? Yes or No:\n")
 		if finalchoice in ("Yes", "Y", "y", "yes"):
 			print("You walk up to the plant, trying to look as friendly as possible. One of its many mouths reaches out and snaps at you.\n")
-			print(f"{name}: Hey, do you mind moving...?")
+			print(f"{name}: Hey, do you mind moving...?\n")
+			print("The angry plant lashes out at you again, causing you to jump back.\n")
+			print(f"{name}: What's wrong? Is everything alright?\n")
+			print("The plant lets out a horrific shriek, which concerns you even more.\n")
