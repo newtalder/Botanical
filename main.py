@@ -25,19 +25,19 @@ while beeta not in ("Yes", "Y", "y", "yes"):
 #talk to the mist
 def save():
 	with open("savenload", "wb") as f:
-		pickle.dump(flower, f)
-		pickle.dump(fern, f)
-		pickle.dump(conifer, f)
+		pickle.dump(orchid, f)
+		pickle.dump(ferny, f)
+		pickle.dump(pine, f)
 		print("Your game has been saved!")
 def load():
-	global flower
-	global fern
-	global conifer
+	global orchid
+	global ferny
+	global pine
 	try:
 		with open("savenload", "rb") as f:
-			flower = pickle.load(f)
-			fern = pickle.load(f)
-			conifer = pickle.load(f)
+			orchid = pickle.load(f)
+			ferny = pickle.load(f)
+			pine = pickle.load(f)
 			print("Your game has been loaded!")
 	except FileNotFoundError:
 		print("This game file was not found!")
