@@ -1,9 +1,9 @@
 #introduction
 import savenload
 import pickle
-import flower
-import fern
-import conifer
+from flower import orchid
+from fern import ferny
+from conifer import pine
 print("BOTANICAL")
 print("You enter an old, almost abandonded greenhouse through its Northern entrance, but as soon as you step in, you pass out. When you wake up, the door is now blocked by a giant plant. The room you are in is covered in moss, and on the center of the floor is a small beetle.")
 #super cool little beetle dude
@@ -64,7 +64,6 @@ while move != "q":
 #The Orchid
 			choose2 = input("Will you walk forward? Yes or No:\n")
 			if choose2 in ("Yes", "Y", "y", "yes"):
-				from flower import orchid
 				orchid.talk()
 				orchid.get_item()
 				orchid.use_item()
@@ -79,7 +78,6 @@ while move != "q":
 #The Fern
 			choose3 = input("Will you walk forward? Yes or No:\n")
 			if choose3 in ("Yes", "Y", "y", "yes"):
-				from fern import ferny
 				ferny.talk()
 				ferny.get_item()
 				ferny.use_item()
@@ -94,7 +92,6 @@ while move != "q":
 #The Pine Tree
 			choose4 = input("Will you walk forward? Yes or No:\n")
 			if choose4 in ("Yes", "Y", "y", "yes"):
-				from conifer import pine
 				pine.talk()
 				pine.get_item()
 				pine.use_item()
