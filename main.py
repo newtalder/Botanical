@@ -104,7 +104,12 @@ while move != "q":
 				pine.get_item()
 				pine.use_item()
 				finalflower = finalflower+1
-				continue
+				leave = ("")
+				leave = input("If you are confident you have helped the three plants, would you like to go back to the main room?:\n")
+				if leave in ("Yes", "Y", "y", "yes"):
+					break
+				elif leave in ("No", "N", "no", "n"):
+					continue
 			elif choose4 in ("No", "N", "no", "n"):
 				turn3 = input(f"Would you like to turn back? Yes or No:\n")
 				if turn3 in ("No", "N", "no", "n"):
