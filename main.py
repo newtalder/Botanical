@@ -117,7 +117,7 @@ while move != "q":
 		load()
 	else:
 		print("Sorry, that's not a place you can move to!")
-if finalflower = 3:
+if finalflower == 3:
 	finalchoice = ("")
 	while finalchoice not in ("Yes", "Y", "y", "yes"):
 		finalchoice = input("Will you head back to the front door to try and escape? Yes or No:\n")
