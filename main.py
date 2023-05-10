@@ -52,7 +52,7 @@ E = 0
 S = 0
 W = 0
 while move != "q":
-	move = input("Mist: Where would you like to move? Your options are E, S, or W. Enter q to leave.\n")
+	move = input("Mist: Where would you like to move? Your options are E, S, or W. Enter q to leave. You may also save or load using s or l.\n")
 #East, South, and West options
 	if move == "E":
 		print("You have moved East.")
@@ -101,5 +101,9 @@ while move != "q":
 				turn3 = input(f"Would you like to turn back? Yes or No:\n")
 	elif move == "q":
 		print("Goodbye!")
+	elif move == "s":
+		save()
+	elif move == "l":
+		load()
 	else:
 		print("Sorry, that's not a place you can move to!")
