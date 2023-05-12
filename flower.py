@@ -5,6 +5,7 @@ class Flower():
         self.inventory = []
     def talk(self):
         print(f"Orchid?: *Growwwllll*\nYou give a thumbs up, almost as to ask if it's ok.\nThe orchid shakes its sad, droopy head.")
+        time.sleep(.5)
     def get_item(self):
         flowchoi = input("You look around the room to see dead flowers of all kinds, all dried up. In the left corner of the room, there lies a watering can, would you like to pick it up?\n")
         if flowchoi in ("Yes", "Y", "y", "yes"):
