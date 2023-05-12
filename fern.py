@@ -1,3 +1,4 @@
+import time
 class Fern():
     def __init__(self):
         self.room_items = ["gardening scissors"]

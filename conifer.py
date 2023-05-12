@@ -1,3 +1,4 @@
+import time
 class Conifer():
     def __init__(self):
         self.room_items = ["pinecone"]
