@@ -158,7 +158,7 @@ if finalflower == 3:
 			print("The plant lets out a horrific shriek, which concerns you even more.")
 			time.sleep(1.3)
 			speakopt = ("")
-			if speakopt not in ("3"):
+			while speakopt not in ("3"):
 				speakopt = input("What will you say to the plant?\nOPTIONS:\n1: Ask the plant if it's lonely\n2: Ask the plant if it's hurt\n3: Ask the plant if it's hungry\n")
 				if speakopt in ("1"):
 					print(f"{name}: Are you lonely?")
@@ -184,12 +184,12 @@ if finalflower == 3:
 				print("The plant nods enthusiastically.")
 				time.sleep(1.3)
 				choosing = ("")
-				if choosing not in ("2"):
-					choosing = input("What will you try to do?\nOPTIONS:\n1: Try to open the windows\n2: Ask the plants for help\n")
-					if choosing in ("1"):
+				while choosing not in ("2"):
+					choosing = input("What will you try to do?\nOPTIONS:\nA: Try to open the windows\nB: Ask the plants for help\n")
+					if choosing in ("A"):
 						print("You try to open the windows, but they won't budge without help.")
 						continue
-				if choosing in ("2"):
+				if choosing in ("B"):
 					print("Orchid: Hey! You called?")
 					time.sleep(1.3)
 					print("Fern: What's up!")
