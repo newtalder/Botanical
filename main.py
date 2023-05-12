@@ -1,10 +1,12 @@
 #introduction
 import savenload
 import pickle
+import time
 from flower import orchid
 from fern import ferny
 from conifer import pine
 print("BOTANICAL")
+time.sleep(1)
 print("You enter an old, almost abandonded greenhouse through its Northern entrance, but as soon as you step in, you pass out. When you wake up, the door is now blocked by a giant plant. The room you are in is covered in moss, and on the center of the floor is a small beetle.")
 #super cool little beetle dude
 beeta = ("")
@@ -12,15 +14,22 @@ while beeta not in ("Yes", "Y", "y", "yes"):
 	beeta = input("Will you talk to the beetle?\n")
 	if beeta in ("Yes", "Y", "y", "yes"):
 		print("Beetle?: Hello? Who are you?")
+		time.sleep(1)
 		name = input("What's your name?\n")
+		time.sleep(1)
 		print(f"{name}: I'm {name}.")
+		time.sleep(1)
 		print("Beetle?: Yikes, that's a weird name. Well I'm Hercules, cool right?")
+		time.sleep(1)
 		print("Hercules: Anyways, have you seen that giant plant at the door? She won't move and she just so happens to be stopping our helpers from coming in! It's annoying!")
 		choose1 = input("Yes or No:\n")
 		if choose1 in ("No", "N", "no", "n"):
+			time.sleep(1)
 			print("Hercules: Huh, that's weird, she's hard to miss.")
 		elif choose1 in ("Yes", "Y", "y", "yes"):
+			time.sleep(1)
 			print("Hercules: Scary, right?! ")
+			time.sleep(1)
 		print("Hercules: Wait... I had an idea! Maybe you can help us! If you go look around, maybe you can find something to stop her. Ask the mist!")
 #talk to the mist
 def save():
