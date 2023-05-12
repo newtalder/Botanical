@@ -144,15 +144,22 @@ if finalflower == 3:
 			print(f"{name}: What's wrong? Is everything alright?\n")
 			print("The plant lets out a horrific shriek, which concerns you even more.\n")
 			speakopt = ("")
-			while speakopt not in ("3"):
+			if speakopt not in ("1", "2", "3"):
 				speakopt = input("What will you say to the plant?\nOPTIONS:\n1: Ask the plant if it's lonely\n2: Ask the plant if it's hurt\n3: Ask the plant if it's hungry\n")
 				if speakopt in ("1"):
 					print(f"{name}: Are you lonely?")
 					print("The plant shakes its head.")
+					continue
 				if speakopt in ("2"):
 					print(f"{name}: Are you hurt?")
 					print("The plant shakes its head.")
+					continue
 				if speakopt in ("3"):
 					print(f"{name}: Are you hungry?")
-					print("The plant nods, ashamed")
+					print("The plant nods sadly.")
+					print(f"{name}: What are you hungry for?")
+					print("The plant looks longingly outside for the sunlight.")
+					print(f"{name}: Well I think we can fix that! Only if you promise to move away from the door.")
+					print("The plant nods enthusiastically.")
+
 
