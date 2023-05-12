@@ -138,11 +138,11 @@ if finalflower == 3:
 	while finalchoice not in ("Yes", "Y", "y", "yes"):
 		finalchoice = input("Are you ready to confront the plant? Yes or No:\n")
 		if finalchoice in ("Yes", "Y", "y", "yes"):
-			print("You walk up to the plant, trying to look as friendly as possible. One of its many mouths reaches out and snaps at you.\n")
-			print(f"{name}: Hey, do you mind moving...?\n")
-			print("The angry plant lashes out at you again, causing you to jump back.\n")
-			print(f"{name}: What's wrong? Is everything alright?\n")
-			print("The plant lets out a horrific shriek, which concerns you even more.\n")
+			print("You walk up to the plant, trying to look as friendly as possible. One of its many mouths reaches out and snaps at you.")
+			print(f"{name}: Hey, do you mind moving...?")
+			print("The angry plant lashes out at you again, causing you to jump back.")
+			print(f"{name}: What's wrong? Is everything alright?")
+			print("The plant lets out a horrific shriek, which concerns you even more.")
 			speakopt = ("")
 			if speakopt not in ("1", "2", "3"):
 				speakopt = input("What will you say to the plant?\nOPTIONS:\n1: Ask the plant if it's lonely\n2: Ask the plant if it's hurt\n3: Ask the plant if it's hungry\n")
@@ -156,10 +156,31 @@ if finalflower == 3:
 					continue
 				if speakopt in ("3"):
 					print(f"{name}: Are you hungry?")
-					print("The plant nods sadly.")
+					print("The plant, Venus, nods sadly.")
 					print(f"{name}: What are you hungry for?")
 					print("The plant looks longingly outside for the sunlight.")
 					print(f"{name}: Well I think we can fix that! Only if you promise to move away from the door.")
 					print("The plant nods enthusiastically.")
-
-
+					choosing = ("")
+					if choosing not in ("1", "2"):
+					choosing = input("What will you try to do?\nOPTIONS:\n1: Try to open the windows\n2: Ask the plants for help\n")
+					if choosing in ("1"):
+						print("You try to open the windows, but they won't budge without help.")
+						continue
+					if choosing in ("2"):
+						print("Orchid: Hey! You called?")
+						print("Fern: What's up!")
+						print("Pine Tree: What's wrong?")
+						print(f"{name}: I need some help trying to get sunlight into the building! Without sunlight, you could all die and Venus can't move until then!")
+						print("The plants follow you to a window and successfully help you open one.")
+						print("Orchid: Wow! It worked! Lets try the other windows now.")
+						print("The plants help you open all of the windows, letting the warm nice sun flow into the building.")
+						print("You watch Venus soak up the light, becoming brighter and clearly happier.")
+						print("Venus: Thank you for helping me! I'll get out of your hair now and move away from the door.")
+						ending = ("")
+						while ending not in ("Yes", "Y", "y", "yes"):
+							ending = input("Would you like to leave the greenhouse? Yes or No\n")
+						if ending in ("Yes", "Y", "y", "yes"):
+							print("You say your farewells and walk outside to greet the sun and fresh air.")
+							print("Congratulations! You saved the plants! Thank you for playing BOTANICAL.")
+							break
