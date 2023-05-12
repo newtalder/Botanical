@@ -170,49 +170,49 @@ if finalflower == 3:
 					time.sleep(1.3)
 					print("The plant shakes its head.")
 					continue
-			if speakopt in ("3"):
-				print(f"{name}: Are you hungry?")
-				time.sleep(1.3)
-				print("The plant, Venus, nods sadly.")
-				time.sleep(1.3)
-				print(f"{name}: What are you hungry for?")
-				time.sleep(1.3)
-				print("The plant looks longingly outside for the sunlight.")
-				time.sleep(1.3)
-				print(f"{name}: Well I think we can fix that! Only if you promise to move away from the door.")
-				time.sleep(1.3)
-				print("The plant nods enthusiastically.")
-				time.sleep(1.3)
-				choosing = ("")
-				while choosing not in ("2"):
-					choosing = input("What will you try to do?\nOPTIONS:\nA: Try to open the windows\nB: Ask the plants for help\n")
-					if choosing in ("A"):
-						print("You try to open the windows, but they won't budge without help.")
-						continue
-				if choosing in ("B"):
-					print("Orchid: Hey! You called?")
+				elif speakopt in ("3"):
+					print(f"{name}: Are you hungry?")
 					time.sleep(1.3)
-					print("Fern: What's up!")
+					print("The plant, Venus, nods sadly.")
 					time.sleep(1.3)
-					print("Pine Tree: What's wrong?")
+					print(f"{name}: What are you hungry for?")
 					time.sleep(1.3)
-					print(f"{name}: I need some help trying to get sunlight into the building! Without sunlight, you could all die and Venus can't move until then!")
+					print("The plant looks longingly outside for the sunlight.")
 					time.sleep(1.3)
-					print("The plants follow you to a window and successfully help you open one.")
+					print(f"{name}: Well I think we can fix that! Only if you promise to move away from the door.")
 					time.sleep(1.3)
-					print("Orchid: Wow! It worked! Lets try the other windows now.")
+					print("The plant nods enthusiastically.")
 					time.sleep(1.3)
-					print("The plants help you open all of the windows, letting the warm nice sun flow into the building.")
-					time.sleep(1.3)
-					print("You watch Venus soak up the light, becoming brighter and clearly happier.")
-					time.sleep(1.3)
-					print("Venus: Thank you for helping me! I'll get out of your hair now and move away from the door.")
-					time.sleep(1.3)
-					ending = ("")
-					while ending not in ("Yes", "Y", "y", "yes"):
-						ending = input("Would you like to leave the greenhouse? Yes or No\n")
-					if ending in ("Yes", "Y", "y", "yes"):
-						print("You say your farewells and walk outside to greet the sun and fresh air.")
-						time.sleep(1.3)
-						print("Congratulations! You saved the plants! Thank you for playing BOTANICAL.")
-						break
+					choosing = ("")
+					while choosing not in ("B"):
+						choosing = input("What will you try to do?\nOPTIONS:\nA: Try to open the windows\nB: Ask the plants for help\n")
+						if choosing in ("A"):
+							print("You try to open the windows, but they won't budge without help.")
+							continue
+						elif choosing in ("B"):
+							print("Orchid: Hey! You called?")
+							time.sleep(1.3)
+							print("Fern: What's up!")
+							time.sleep(1.3)
+							print("Pine Tree: What's wrong?")
+							time.sleep(1.3)
+							print(f"{name}: I need some help trying to get sunlight into the building! Without sunlight, you could all die and Venus can't move until then!")
+							time.sleep(1.3)
+							print("The plants follow you to a window and successfully help you open one.")
+							time.sleep(1.3)
+							print("Orchid: Wow! It worked! Lets try the other windows now.")
+							time.sleep(1.3)
+							print("The plants help you open all of the windows, letting the warm nice sun flow into the building.")
+							time.sleep(1.3)
+							print("You watch Venus soak up the light, becoming brighter and clearly happier.")
+							time.sleep(1.3)
+							print("Venus: Thank you for helping me! I'll get out of your hair now and move away from the door.")
+							time.sleep(1.3)
+							ending = ("")
+							while ending not in ("Yes", "Y", "y", "yes"):
+								ending = input("Would you like to leave the greenhouse? Yes or No\n")
+							if ending in ("Yes", "Y", "y", "yes"):
+								print("You say your farewells and walk outside to greet the sun and fresh air.")
+								time.sleep(1.3)
+								print("Congratulations! You saved the plants! Thank you for playing BOTANICAL.")
+								break
