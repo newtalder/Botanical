@@ -163,7 +163,7 @@ if finalflower == 3:
 					print("The plant nods enthusiastically.")
 					choosing = ("")
 					if choosing not in ("1", "2"):
-					choosing = input("What will you try to do?\nOPTIONS:\n1: Try to open the windows\n2: Ask the plants for help\n")
+						choosing = input("What will you try to do?\nOPTIONS:\n1: Try to open the windows\n2: Ask the plants for help\n")
 					if choosing in ("1"):
 						print("You try to open the windows, but they won't budge without help.")
 						continue
