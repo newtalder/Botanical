@@ -5,6 +5,7 @@ class Fern():
         self.inventory = []
     def talk(self):
         print("You see a fern that is so full that it sags, it does not turn to look at you. Maybe lighten it's load?")
+        time.sleep(.5)
     def get_item(self):
         ferchoi = input("You are surrounded by overgrown leaves and weeds crawling up the walls, one of the stray vines holds a pair of gardening scissors, would you like to pick it up?\n")
         if ferchoi in ("Yes", "Y", "y", "yes"):
