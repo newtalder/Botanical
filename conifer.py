@@ -5,6 +5,7 @@ class Conifer():
         self.inventory = []
     def talk(self):
         print(f"Pine Tree?: ....hi\nYou give a thumbs up, almost as to ask if it's ok.\nPine Tree?: Just lonely is all.")
+        time.sleep(.5)
     def get_item(self):
         ferchoi = input("This room is not like the rest, it is almost completely empty besides the lone tree. Not far from it though, lays a stray pinecone. Would you like to pick it up?\n")
         if ferchoi in ("Yes", "Y", "y", "yes"):
